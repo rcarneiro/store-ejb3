@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<faces-config xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_1_2.xsd"
+	version="1.2">
+
+	<application>
+		<default-render-kit-id>
+			org.apache.myfaces.trinidad.core
+		</default-render-kit-id>
+	</application>
+	
+	<managed-bean>
+		<managed-bean-name>cartBean</managed-bean-name>
+		<managed-bean-class>br.com.store.view.managedbeans.CartBean</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>ordersBean</managed-bean-name>
+		<managed-bean-class>br.com.store.view.managedbeans.OrdersBean</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>	
+	
+	<navigation-rule>
+		<from-view-id>*</from-view-id>
+		<navigation-case>
+			<from-outcome>index</from-outcome>
+			<to-view-id>/index.jsp</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>logout</from-outcome>
+			<to-view-id>/index.jsp</to-view-id>
+			<redirect/>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>orders</from-outcome>
+			<to-view-id>/orders.jsp</to-view-id>
+		</navigation-case>		
+	</navigation-rule>
+
+</faces-config>

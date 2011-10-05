@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- The MySQL database JCA connection factory config -->
+
+<!-- Project: Store -->
+<!-- Author: Rafael Carneiro - rafaelcarneirob@gmail.com -->
+
+<datasources>
+   <local-tx-datasource>
+
+      
+      <jndi-name>StoreDS</jndi-name>
+
+      <connection-url>jdbc:mysql://localhost:3306/store</connection-url>
+
+      <!-- The driver class -->
+      <driver-class>com.mysql.jdbc.Driver</driver-class>
+
+      <!-- The login and password -->
+      <user-name>root</user-name>
+      <password>root</password>
+
+      <!-- The minimum connections in a pool/sub-pool. Pools are lazily constructed on first use -->
+      <min-pool-size>5</min-pool-size>
+
+      <!-- The maximum connections in a pool/sub-pool -->
+      <max-pool-size>20</max-pool-size>
+
+      <!-- The time before an unused connection is destroyed -->
+      <!-- NOTE: This is the check period. It will be destroyed somewhere between 1x and 2x this timeout after last use -->
+      <idle-timeout-minutes>0</idle-timeout-minutes>
+      
+   </local-tx-datasource>
+   
+</datasources>

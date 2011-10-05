@@ -1,0 +1,30 @@
+table
+{
+    border: 1px solid #ff0000 !important;
+    border-collapse: separate !important;
+}
+
+table table
+{
+    border-color: #00ff00 !important;
+}
+
+table table table
+{
+    border-color: #0000ff !important;
+}
+
+table table table table
+{
+    border-color: #ff0000 !important;
+}
+
+table table table table table
+{
+    border-color: #00ff00 !important;
+}
+
+table table table table table table
+{
+    border-color: #0000ff !important;
+}

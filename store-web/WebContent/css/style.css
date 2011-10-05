@@ -1,0 +1,659 @@
+/*additions by cerulean */
+body {
+	font-family:Verdana
+	margin: 0px;
+	text-align: center;
+	font-size:12px;
+}
+a img{
+	border:none;
+}
+
+body {
+	text-align: -moz-center;
+}
+A.link {
+	font-size:11px;
+}
+#Main {
+	width: 778px;
+}
+
+#topspace {
+	float: left;
+	width: 758px;
+	text-align: right;
+	padding-right: 20px;
+}
+
+#Header1 {
+	float: left;
+	width: 778px;
+}
+
+#Header1 div {
+	float: left;
+}
+
+div.headbg {
+	background-image: url(../images/header_bg.gif);
+	background-repeat: repeat;
+	width: 760px;
+	height: 60px;
+}
+
+#toplinks {
+	padding-top: 23px;
+}
+
+#toplinks ul {
+	list-style-type: none;
+	font-size: 12px;
+	color: #FFFFFF;
+	font-weight: 600;
+}
+
+#toplinks ul a {
+	font-size: 12px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#toplinks ul a:hover {
+	text-decoration: underline;	
+}
+	
+
+#toplinks li {
+	float: left;
+	padding-right: 13px;
+	padding-left: 13px;
+}
+
+#searchform {
+	margin: 18px 5px 0px 0px;
+	text-align: right;
+	vertical-align: middle;
+}
+
+input.searchbox {
+	background-color: #BFCDDB;
+	border-left-color: #000000;
+	border-top-color: #000000;
+	height: 15px;
+}
+
+/* Header ends */
+/*additon ends*/
+
+
+/* generic styles */
+.genericHeadline, .cartHeadline, .cartItemEditHeadline, .categoryHeadline, 
+.productHeadline, .productListHeadline, .checkoutHeadline, .orderFormHeadline,
+.thankYouHeadline,   .aboutHeading, 
+.contactHeading {
+/*	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 14px; 
+	font-style: normal;
+	font-weight: bold;
+	color: #000000;*/
+	font-size: 14px;
+	font-weight: 600;
+	color: #D06404;
+	text-align: left;
+	margin: 0px;
+	border-bottom: 2px solid #507c9a;
+}
+/* newly added start */
+.welcomeHeading,
+.accountHeadline {
+	font-size: 14px;
+	font-weight: 600;
+	color: #D06404;
+	text-align: left;
+	margin: 0px;
+}
+.genericLabel A:link,
+A.prodlinks {
+	color: #3e6b8a;
+	font-size: 11px;
+	text-decoration: none;
+}
+.genericLabel A:link,
+A.prodlinks:hover {
+	text-decoration: underline;
+}
+/* newly added ends */
+.genericGridHeadline {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 14px; 
+	font-style: normal;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+/*.genericHeading,*/ 
+.accountHeading {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 12px; 
+	font-style: normal;
+	font-weight: bold;
+	color: #000000;
+}
+
+td.tableheading {
+	background-image: url(../images/headingbg.gif);
+	background-repeat: repeat-x;
+	height: 20px;
+	font-size: 11px;
+	font-weight: 600;
+	color: #FFFFFF;
+	text-align: left;
+	padding-left: 10px;
+	vertical-align: middle;
+}
+/*heading with curve starts*/
+.genericHeading {
+	background-image: url(../images/bg_titlebar.gif);
+	background-repeat: no-repeat;
+	padding: 0px 0px 4px 15px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+ div.headerpadding{
+	background:url(../images/a2_corner_tr.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+	padding: 3px 0px 3px 0px
+}
+/*heading with curve ends*/
+.genericInstructions, .checkoutInstructions, .orderFormInstructions, .thankYouInstructions,
+.accountInstructions {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 11px; 
+	font-style: italic;
+	font-weight: normal;
+	color: #000000;
+}
+.genericMessage, .cartMessage, .welcomeMessage, .aboutMessage, .contactMessage,
+.errorsMessage, .messagesMessage {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 11px; 
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+}
+.genericLabel, .cartItemEditLabel, .categoryLabel, .productLabel, .paymentFormLabel,
+.billingFormRequiredLabel, .deliveryFormRequiredLabel, .thankYouItemLabel, .accountLabel {
+/*	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 11px; 
+	font-style: normal;
+	font-weight: bold;
+	color: #000000;*/
+	
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 11px; 
+	font-weight: 600;
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+}
+
+ .productListLabel,
+/*.orderFormLabel,*/  .thankYouLabel, .accountGridLabel {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 11px; 
+	font-style: normal;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.genericData, .categoryTree, .cartItemEditData, .categoryData, .productData, .accountData {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 11px; 
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+}
+.genericGridData, .cartGridData, .productListData, .paymentGridData, .orderProductListData,
+.thankYouData, .accountGridData {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 11px; 
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+}
+.genericTableBorder {
+	/*border: 1pt #5E8B67 solid;*/
+	background-color: #eeeeee;
+}
+
+/* body */
+BODY, TD {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	bgcolor: #FFFFFF;
+	font-weight: normal;
+	font-style: normal;
+	margin: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+}
+
+/* links 
+A:link {
+	color: #45734F; 
+	text-decoration: none; 
+}
+A:visited { 
+	
+		color: #45734F;
+	
+	text-decoration: none;
+}*/
+A:hover {
+	text-decoration:underline;
+} 
+A.menu:link {
+	color: #3e6b8a; 
+	text-decoration: none; 
+}
+A.menu:visited { 
+	
+	text-decoration: none;
+}
+A.menu:hover {
+
+	text-decoration:underline;
+} 
+
+
+
+/* sub menu */
+.subMenu { 
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000000;
+	/*font-weight: bold;*/
+	font-style: normal;
+}
+.subMenuActive {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 11px; 
+	font-style: normal;
+	font-weight: bold;
+	color: #FF9900;
+}
+.subMenuInactive {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 11px; 
+	font-style: normal;
+	font-weight: bold;
+	color: #CCCCCC;
+}
+.subMenu A:link {
+	color: #3e6b8a; 
+	text-decoration: none;
+}
+.subMenu A:visited { 
+	
+		color: #3e6b8a; 
+	
+	text-decoration: none;
+}
+.subMenu A:hover { 
+	color: #000000; 
+	text-decoration: none;
+}
+
+/* category tree */
+.categoryTreeParentActive {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 11px; 
+	font-style: normal;
+	font-weight: normal;
+	color: #FF9900;
+} 
+.categoryTreeActive {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 11px; 
+	font-style: normal;
+	font-weight: bold;
+	color: #FF9900;
+}
+
+/* cart screen */
+.cartGridTotal {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 11px; 
+	font-style: normal;
+	font-weight: bold;
+	color: #000000;
+}
+
+/* category screen */
+.subcategories {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 11px; 
+	font-style: normal;
+	font-weight: normal;
+	color: #000000;
+}
+
+/* buttons */
+/* buttons */
+
+.buttonhover {
+/*	font-family:Arial, Helvetica, sans-serif;
+	font-size: 11px; 
+	font-weight: 600;*/
+	padding:2px 1px;
+	color: #fbe249;
+	background-color:#2D5775;
+	border: 2px solid #2D5775;
+	cursor: hand;
+}
+
+/*.button {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 11px; 
+	font-weight: 600;
+	padding:2px 1px;
+	color: #fbe249;
+	background-color:#2D5775;
+	border: 2px solid #2D5775;
+	cursor: hand;
+}*/
+
+.account-btn {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 11px; 
+	font-weight: 600;
+	color: #473A61;
+	background-color:#FFCC55;
+	border: 2px solid #FFCC55;
+	cursor: hand;
+	filter:progid:DXImageTransform.Microsoft.Gradient
+      (GradientType=0,StartColorStr='#FFFFFF',EndColorStr='#FFFFFF');
+}
+/*.button{
+	font-family: Verdana, Helvetica, sans-serif; 
+	font-size: 11px; 
+	font-weight: normal;
+	color: #334437;
+	background-color: #FFFFFF;
+	border:2px solid;
+	border-top-color: #5E8B67;
+	border-left-color: #5E8B67;
+	border-right-color: #5E8B67;
+	border-bottom-color: #5E8B67;
+	cursor: hand;
+	filter:progid:DXImageTransform.Microsoft.Gradient
+      (GradientType=0,StartColorStr='#FFFFFF',EndColorStr='#FFFFFF');}
+.buttonhover{
+	color: #000000;
+	border: 2px solid;
+	border-top-color: #FF9900;
+	border-left-color: #FF9900;
+	border-right-color: #FF9900;
+	border-bottom-color: #FF9900;}
+
+*/
+/* miscellaneous */
+input, select, textarea {
+	font-family: Verdana, Helvetica, sans-serif; 
+	font-size: 11px; 
+	font-style: normal; 
+	font-weight: normal;
+	color: #000000;
+}
+.copyrightNotice {
+	font-family: Verdana, Helvetica, sans-serif; 
+	font-size: 9px; 
+	font-style: normal; 
+	font-weight: normal;
+	color: #000000;
+}
+.errorsHeading {
+	font-family: Verdana, Helvetica, sans-serif; 
+	font-size: 11px; 
+	font-style: normal; 
+	font-weight: bold;
+	color: #990000;
+}
+.messagesHeading {
+	font-family: Verdana, Helvetica, sans-serif; 
+	font-size: 11px; 
+	font-style: normal; 
+	font-weight: bold;
+	color: #009900;
+}
+/*Search form styles starts*/
+.quickserch {
+	background-image: url(../images/bg_navgreen.gif);
+	background-repeat: repeat-x;
+}
+
+.leftcorner {
+	background-image: url(../images/generic_tl.gif);
+	background-position: 0% 0%;
+	background-repeat: no-repeat;
+	width: 10px;
+}
+.left_btm_corner {
+	background-image: url(../images/generic_bl.gif);
+	background-position: 0% 100%;
+	background-repeat: no-repeat;
+	width: 10px;
+}
+
+.rightcorner {
+	background-image: url(../images/generic_tr.gif);
+	background-position: 100% 0%;
+	background-repeat: no-repeat;
+	width: 10px;
+}
+.right_btm_corner {
+	background-image: url(../images/generic_br.gif);
+	background-position: 100% 100%;
+	background-repeat: no-repeat;
+	width: 10px;
+}
+
+.boxtitle {
+	padding-top: 10px;
+	padding-bottom: 5px;
+	font-size: 12px;
+	font-weight: 900;
+	
+}
+.hr{
+	background:#E3E3E3;color:#E3E3E3;height:2px;padding:0;border:0
+}
+
+.formData,
+.smallfont {
+	font-size: 12px;
+}
+.quickserch label, .mediumlarge {
+	font-size: 11px;
+}
+/*.deliveryFormRequiredLabel,*/
+.label {
+	margin:2px 0;
+	color:#666;
+	text-align:right;
+	padding-right:12px;
+	font-size: 12px;
+}
+.linespace10 {
+	height: 10px;
+}
+.alert {
+	color: #FF0000;
+}
+
+.linespace5 {
+	height: 5px;
+}
+
+
+.button,
+input.buttonblue,
+input.buttonred,
+input.hotbutton{cursor:hand;color:#FFF;font-weight:bold;font-size:11px;padding:2px 1px;margin:0;white-space:nowrap}
+input.buttonblue, .button{background:url(../images/bg_sunblue.gif) repeat-x 0 -10px #304C60;border-right:1px solid #304C60;border-bottom:1px solid #304C60;border-left:1px solid #BACDD9;border-top:1px solid #BACDD9}
+
+input.buttonred,input.hotbutton{background-color: #eb8628;  border-right:1px solid #C06600;border-bottom:1px solid #C06600;border-left:1px solid #FAE2CC;border-top:1px solid #FAE2CC}
+input.buttonblue, .button { repeat-x 0 -10px #304C60;border-right:1px solid #304C60;border-bottom:1px solid #304C60;border-left:1px solid #BACDD9;border-top:1px solid #BACDD9}
+input.buttonred:hover,input.buttonblue:hover,input.button:hover,input.hotbutton:hover{color:#fbe249}
+
+.sbmit_button, .aln_cont_centr {
+	text-align: center;
+}
+
+.aln_cont_left {
+	text-align: left;
+}
+
+.aln_cont_right {
+	text-align: right;
+}
+
+span.rightarrowblue{color:#3E6B8A}
+a {
+	color: #3e6b8a;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.unfwidth {
+	width: 90%
+}
+
+.unfwidth_ {
+	width: 87%
+}
+
+.sub_title {
+	font-size: 11px;
+}
+/*Search form styles ends*/
+/*light yellow box*/
+.yellobox {
+	background-color: #fff4c7;
+	background-image: url(../images/bg_lightyellow.gif);
+	background-repeat: repeat-x;
+}
+/*light yellobox ends*/
+/*left nav*/
+
+.leftnav {
+	background-image: url(../images/bg_navblue[1].gif);
+	background-repeat: repeat-x;
+}
+
+.leftnav a {
+	font-size: 11px;
+}
+
+/*tab menu*/
+td.suntabactive a{color:#fff}
+td.suntabactive,table.suntabbg,td.suntabbg,th.suntabbg,tr.suntabbg td,tr.suntabbg th,table tr td.suntabbg,table tr th.suntabbg{background:#507c9a}
+td.suntabactive{background:#507c9a url(../images/bg_titlebar.gif) no-repeat left top;border-right:1px solid #FFF;padding:0}
+td.suntabactive div{background:url(../images/a2_corner_tr.gif) no-repeat right top;padding:6px 7px 5px 7px}
+td.suntab{background:#CCDAE3 url(../images/d7_tab_bg.gif) repeat-x;border-right:1px solid #FFF;border-top:3px solid #FFF}
+td.suntab div{background:url(../images/corner_navblue_tr.gif) no-repeat right top;padding:0px 0px 5px 7px}
+td.suntab div{padding:6px 7px 3px 7px}
+td.suntab div a:visited{color:#35556B}
+div.suntabsubrow{padding:9px 7px 5px 7px;background:#507c9a}
+div.suntabsubrow,div.suntabsubrow span,div.suntabsubrow span b,td.suntabactive div{font-weight:bold;color:#FFF}
+div.suntabsubrow a,div.suntabsubrow a:visited{font-weight:normal;color:#CCDAE3}
+.d7v0 a {
+ text-decoration: none;
+}
+
+.d7v0 a:hover {
+	text-decoration: underline;
+}
+
+.d7v0 td {
+	border-bottom: 2px solid #2D5775;
+}
+/*new header bg:*/
+.ecom_table, .cartGridLabel, .orderProductListLabel {
+background:#dfe6ed;color:#777;text-align:left;
+font-weight: bold;
+}
+
+.orderFormLabel,
+.genericGridLabel, .paymentGridLabel {
+background:#dfe6ed;color:#777;
+text-align: center;
+font-weight: bold;
+}
+
+.cartGridData_btm_brdr
+{
+border-bottom:1px solid #c5d5a9;
+font-size: 5px;
+
+}
+
+.strikeText
+{
+	text-decoration: line-through;
+}
+
+.creditText
+ {
+	font-size: 12px;
+	font-weight: 500;
+	color: #D06404;
+	text-align: left;
+	margin: 0px;
+}
+
+
+/*added on 02/08/07*/
+/*new css: added on 16/07/07 author: Robert Paul*/
+.paddingTB {
+	padding-top: 5px;
+	padding-bottom: 5px; 
+}
+
+tr.title td {
+ text-align: center;
+}
+
+.billinginfo p {
+	margin: 0px 0px 0px 5px;
+}
+
+div.pagetitle {font-weight:bold;color:#E76F00;margin:0px; font-size: 15px}
+
+.bottomborder {
+	border-bottom: 2px solid #2D5775;
+}
+
+.genericHeading, .welcomeHeading, .aboutHeading, .contactHeading, .accountHeading {
+
+	font-family: Verdana, Helvetica, sans-serif;
+
+	font-size: 11px; 
+
+	font-style: normal;
+
+	font-weight: bold;
+
+	color: #ffffff;
+
+	background-color: #426f8f;
+}
+
+
+

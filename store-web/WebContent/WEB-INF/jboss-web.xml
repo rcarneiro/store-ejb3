@@ -1,0 +1,6 @@
+<jboss-web>
+    <security-domain>
+       java:/jaas/storeDB
+    </security-domain>
+</jboss-web>
+

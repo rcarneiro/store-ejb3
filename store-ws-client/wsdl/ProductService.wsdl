@@ -1,0 +1,53 @@
+<definitions name="ProductServiceBeanService" targetNamespace="http://impl.service.model.store.com.br/" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://impl.service.model.store.com.br/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+ <types>
+ <xs:schema targetNamespace="http://impl.service.model.store.com.br/" version="1.0" xmlns:tns="http://impl.service.model.store.com.br/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="getAll" type="tns:getAll" /> 
+  <xs:element name="getAllResponse" type="tns:getAllResponse" /> 
+ <xs:complexType name="getAll">
+  <xs:sequence /> 
+  </xs:complexType>
+ <xs:complexType name="getAllResponse">
+ <xs:sequence>
+  <xs:element maxOccurs="unbounded" minOccurs="0" name="return" type="tns:product" /> 
+  </xs:sequence>
+  </xs:complexType>
+ <xs:complexType name="product">
+ <xs:sequence>
+  <xs:element minOccurs="0" name="id" type="xs:int" /> 
+  <xs:element minOccurs="0" name="name" type="xs:string" /> 
+  <xs:element minOccurs="0" name="price" type="xs:decimal" /> 
+  <xs:element minOccurs="0" name="qtde" type="xs:int" /> 
+  </xs:sequence>
+  </xs:complexType>
+  </xs:schema>
+  </types>
+ <message name="ProductServiceBean_getAllResponse">
+  <part element="tns:getAllResponse" name="getAllResponse" /> 
+  </message>
+ <message name="ProductServiceBean_getAll">
+  <part element="tns:getAll" name="getAll" /> 
+  </message>
+ <portType name="ProductServiceBean">
+ <operation name="getAll" parameterOrder="getAll">
+  <input message="tns:ProductServiceBean_getAll" /> 
+  <output message="tns:ProductServiceBean_getAllResponse" /> 
+  </operation>
+  </portType>
+ <binding name="ProductServiceBeanBinding" type="tns:ProductServiceBean">
+  <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" /> 
+ <operation name="getAll">
+  <soap:operation soapAction="" /> 
+ <input>
+  <soap:body use="literal" /> 
+  </input>
+ <output>
+  <soap:body use="literal" /> 
+  </output>
+  </operation>
+  </binding>
+ <service name="ProductServiceBeanService">
+ <port binding="tns:ProductServiceBeanBinding" name="ProductServiceBeanPort">
+  <soap:address location="http://127.0.0.1:8080/store-store-ejb/ProductServiceBean" /> 
+  </port>
+  </service>
+  </definitions>

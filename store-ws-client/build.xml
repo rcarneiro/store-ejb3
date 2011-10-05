@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<project name="cxf wsdl2java" default="generateJava">   
+
+   <path id="cxf.classpath">
+      <fileset dir="lib">
+         <include name="*.jar"/>
+      </fileset>
+   </path>
+      
+   <target name="generateJava">
+      <java classname="org.apache.cxf.tools.wsdlto.WSDLToJava" fork="true">
+         <arg value="-client"/>
+         <arg value="-d"/>
+         <arg value="src"/>
+         <arg value="wsdl/ProductService.wsdl"/>
+         <classpath>
+            <path refid="cxf.classpath"/>
+         </classpath>
+      </java>
+   </target>
+</project>
+
